@@ -58,6 +58,12 @@ Go through this 4-week self-guided learning experience to level up your bitcoin 
 
 ---
 
+### [Plan ₿ intro course]({{ '/guide/resources/planb-intro-course/' | relative_url }})
+
+A short, self-guided course on backup confirmation, address formatting, and fee selection — drafted for Plan ₿ Network.
+
+---
+
 ### [Code resources]({{ '/guide/resources/code-resources/' | relative_url }})
 
 Code resources that are based on, or influenced by the Bitcoin Design Guide and the Bitcoin UI Kit.
