@@ -13,9 +13,10 @@ image: https://bitcoin.design/assets/images/guide/resources/learning-bootcamp/le
 
 Editor's notes
 
-Draft introductory course for Plan ₿ Network (see GitHub issue #1163).
-Written-first with per-chapter quizzes so it can be ported to Plan ₿ Academy
+Review draft for Plan ₿ Academy (see GitHub issue #1163 and PR #1240).
+Written-first with per-chapter quizzes so it can be ported to their repo
 (markdown chapters + native quiz YAML) without new video production.
+Do/Don't pairs need an image on both sides or the after column stays empty.
 
 This is a genuine reuse of existing Guide material, not a meta "how to use the
 guide" tutorial. Dedicated header art can replace the shared bootcamp preview
@@ -40,7 +41,7 @@ https://bitcoin.design/assets/images/guide/resources/learning-bootcamp/
 # Bitcoin UX patterns
 {:.no_toc}
 
-A short, self-guided intro course for [Plan ₿ Network](https://planb.network/en/courses) — and for anyone who wants to practice the UX patterns this guide already recommends.
+This is a **review draft** of a self-guided intro course for [Plan ₿ Academy](https://planb.academy/en/learn-anytime), not a permanent Guide page. Erik and Christoph asked that the course live on their platform so they can teach it as part of the program. The write-up is here so the Design Guide community can review the content first.
 
 Plan ₿ Academy courses are markdown chapters with images and a per-chapter quiz. Video is a separate resource type. This draft follows that format: written explainers, wrong-way vs. right-way comparisons, and a short quiz at the end of each chapter.
 
@@ -175,6 +176,15 @@ Prompt the user to tap the recovery-phrase words in the correct order. Number th
 
 Ask the user to type the phrase into empty text fields. That is slower, more error-prone, and a poor test of whether they stored the backup.
 
+{% include image.html
+   image = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-recovery-phrase-progress.png"
+   retina = "/assets/images/guide/daily-spending-wallet/backup-and-recovery/recovery/restore-manual-recovery-phrase-progress@2x.png"
+   alt-text = "Screen asking the user to type all 12 recovery-phrase words into empty numbered fields"
+   width = 250
+   height = 541
+   layout = "background -shadow"
+%}
+
 {% include do/close.html %}
 
 Explain the verification step *before* you scramble the words. If they tap the wrong word, say so immediately — then let them continue from the last correct word rather than restarting from scratch when you can.
@@ -236,6 +246,15 @@ Use a monospaced typeface, group characters into even chunks, and offer a larger
 {% include do/middle.html label="Don't" icon="forbid" color="red" %}
 
 Render the full address in a proportional UI font as one unbroken line. That forces users to scan a dense block of similar-looking characters, which is exactly when mix-ups happen.
+
+{% include image.html
+   image = "/assets/images/guide/daily-spending-wallet/requesting/Plaintext.png"
+   retina = "/assets/images/guide/daily-spending-wallet/requesting/Plaintext@2x.png"
+   alt-text = "Share sheet showing a bitcoin payment request as one unbroken proportional string"
+   width = 250
+   height = 541
+   layout = "background -shadow"
+%}
 
 {% include do/close.html %}
 
@@ -301,6 +320,15 @@ Show fee options framed by urgency, with total cost and expected confirmation ti
 {% include do/middle.html label="Don't" icon="forbid" color="red" %}
 
 Hide the fee until after Send, or default to a high rate with no warning when the fee is half the payment. Users overpay on-chain fees by mistake more often than they underpay on purpose.
+
+{% include image.html
+   image = "/assets/images/guide/daily-spending-wallet/sending/review-onchain-tx.png"
+   retina = "/assets/images/guide/daily-spending-wallet/sending/review-onchain-tx@2x.png"
+   alt-text = "Send review where the on-chain fee is about half the payment and there is no high-fee warning"
+   width = 250
+   height = 541
+   layout = "background -shadow"
+%}
 
 {% include do/close.html %}
 

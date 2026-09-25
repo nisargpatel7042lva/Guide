@@ -60,7 +60,7 @@ Go through this 4-week self-guided learning experience to level up your bitcoin 
 
 ### [Plan ₿ intro course]({{ '/guide/resources/planb-intro-course/' | relative_url }})
 
-A short, self-guided course on backup confirmation, address formatting, and fee selection — drafted for Plan ₿ Network.
+Review draft of a short Plan ₿ Academy course on backup confirmation, address formatting, and fee selection.
 
 ---
 
